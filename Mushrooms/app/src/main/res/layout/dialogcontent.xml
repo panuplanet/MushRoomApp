@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="แก้ไขข้อมูล"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="ชื่อโปรไฟล์ :" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="111dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:text="55555"
+        android:maxLength="12"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="อุณหภูมิสูงสุด :"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/uhight_temp"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittextdesign"
+            android:drawableRight="@drawable/ic_baseline_create_24"
+            android:layout_marginTop="1dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:cursorVisible="false"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="อุณหภูมิต่ำสุด :"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/ulow_temp"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/edittextdesign"
+            android:drawableRight="@drawable/ic_baseline_create_24"
+            android:inputType="number"
+            android:maxLength="2"
+            android:cursorVisible="false"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:text="ความชื้นสูงสุด :"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/uhight_hum"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:drawableRight="@drawable/ic_baseline_create_24"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="ความชื้นต่ำสุด :"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/ulow_hum"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextdesign"
+        android:drawableRight="@drawable/ic_baseline_create_24"
+        android:inputType="number"
+        android:cursorVisible="false"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:maxLength="2"
+        android:textSize="12sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/uib_date_start"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_date_start_black" />
+
+        <TextView
+            android:id="@+id/u_date_start"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:maxLength="15" />
+
+        <ImageButton
+            android:id="@+id/uib_time_start"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            app:srcCompat="@drawable/ic_time_black" />
+
+        <TextView
+            android:id="@+id/utime_start"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:maxLength="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/uib_date_end"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            app:srcCompat="@drawable/ic_date_start_black" />
+
+        <TextView
+            android:id="@+id/udate_end"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp" />
+
+        <ImageButton
+            android:id="@+id/uib_time_end"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            app:srcCompat="@drawable/ic_time_black" />
+
+        <TextView
+            android:id="@+id/utime_end"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:maxLength="15" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/usubmit"
+        android:layout_width="206dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="update"
+        android:text="แก้ไข"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

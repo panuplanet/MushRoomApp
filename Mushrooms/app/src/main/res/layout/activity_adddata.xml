@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".adddata">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="สร้างโปรไฟล์"
+    android:textStyle="bold"
+    android:layout_marginBottom="20dp"
+    android:textSize="26sp"/>
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edittextdesign"
+        android:cursorVisible="false"
+        android:drawableLeft="@drawable/ic_mr"
+        android:hint="ชื่อโปรไฟล์"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_hight_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittextdesign"
+            android:cursorVisible="false"
+            android:drawableLeft="@drawable/ic_temper"
+            android:gravity="center"
+            android:hint="อุณหภูมิสูงสุด (°C)"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/add_low_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="อุณหภูมิต่ำสุด (°C)"
+            android:background="@drawable/edittextdesign"
+            android:drawableLeft="@drawable/ic_temper"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:cursorVisible="false"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/add_hight_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/ic_hummi"
+            android:background="@drawable/edittextdesign"
+            android:hint="ความชื้นสูงสุด (%)"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:cursorVisible="false"
+            android:textSize="17sp"
+            android:layout_marginRight="10dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/add_low_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittextdesign"
+            android:drawableLeft="@drawable/ic_hummi"
+            android:hint="ความชื้นต่ำสุด (%)"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#000"
+            android:cursorVisible="false"
+            android:textSize="17sp"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_date_start"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/tv_date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:hint="วันที่เริ่ม"
+                android:maxLength="15"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/ib_time_start"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/tv_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="เวลาวันที่เริ่ม"
+                android:maxLength="15"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_date_end"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/tv_date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:hint="วันที่สิ้นสุด"
+                android:maxLength="15"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_time_end"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/tv_time_end"
+                android:layout_width="wrap_content"
+                android:hint="เวลาวันที่สิ้นสุด"
+                android:textSize="17sp"
+                android:maxLength="15"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="55dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/add_submit"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:text="เพิ่มโปรไฟล์"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/add_back"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn2"
+        android:text="กลับ"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp" />
+</LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

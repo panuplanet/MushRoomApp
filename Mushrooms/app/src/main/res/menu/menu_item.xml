@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item
+            android:id="@+id/nav_home"
+            android:title="หน้าแรก"
+          android:icon="@drawable/ic_home"/>
+      <item
+          android:id="@+id/nav_profile"
+          android:title="โปรไฟล์"
+          android:icon="@drawable/ic_profiles"/>
+      <item
+          android:id="@+id/nav_manual"
+          android:title="คู่มือการใช้งาน"
+          android:icon="@drawable/ic_manual"/>
+      <item
+          android:id="@+id/nav_end"
+          android:title="สิ้นสุดการเพาะเห็ด"
+          android:icon="@drawable/end_btn"/>
+</menu>
